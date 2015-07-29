@@ -1,40 +1,89 @@
-body {
-  background: url('images/background.jpg') no-repeat fixed;
-  background-size: 1280px;
-  width: 1280px;
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  width: 1280px;
+	background: url('images/background.jpg') no-repeat fixed;
+ 	background-size: cover;
+}
+
 p {
   font-family: Helvetica, Arial, sans-serif;
   color: grey;
   line-height: 1.25;
   font-size: 16px;
-}
-
-p {
-  margin: 5px;
-  padding: 5px;
+  margin: 10px;
+  padding-left: 10px;
+	padding-bottom: 20px;
 }
 
 h1 {
   font-family: Helvetica, Arial, sans-serif;
   color: #0ea0b9;
   font-weight: bold;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-size: 32px;
   text-transform: uppercase;
-  margin: 5px;
-  padding: 5px;
+  margin: 10px;
+  padding: 10px;
 }
 
 h2 {
   font-family: Helvetica, Arial, sans-serif;
   color: #0ea0b9;
-  margin: 5px;
-  padding: 5px;
+  margin: 10px;
+  padding-top: 10px;
+	padding-left: 10px;
+	font-size: 24px;
 }
-a: hover {
-  color: #145197 ;
+a:hover {
+  color: #145197;
 }
 
 header {
@@ -43,6 +92,7 @@ header {
   width: 1280px;
   height: 100px;
   }
+
 .slider {
   padding-top: 100px;
 }
@@ -53,11 +103,12 @@ header {
     padding-left:15px;
     padding-top: 15px;
   }
+
 ul {
   list-style-type: none;
   padding-left: 0;
   padding-right: 10px;
-  padding-top: 30px;
+  padding-top: 50px;
   font-size: 14px;
   }
 
@@ -72,6 +123,10 @@ li {
   font-size: 10px
   letter-spacing: 3px
 }
+.clearix:after {
+  display: table;
+  clear: both;
+}
 .blog {
   margin-top: 15px;
   margin bottom: 30px;
@@ -80,7 +135,6 @@ li {
   color: white;
   text-align: center;
   padding-top: 10px;
-
 }
 .event {
   color: white;
@@ -110,16 +164,13 @@ aside {
     image-orientation: center;
   }
 .sponsors {
-  clear: both;
   text-align: center;
   padding-top: 25px;
 }
 .social {
-  clear: both;
   text-align: center;
 }
 footer {
-  clear:both;
   background: #0ea0b9;
   height: 50px;
 }
@@ -128,5 +179,4 @@ footer {
   font-family: Helvetica, Arial, sans-serif;
   text-align: center;
   padding-top: 15px;
-
 }
